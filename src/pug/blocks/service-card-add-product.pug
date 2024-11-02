@@ -1,0 +1,31 @@
+.service-card
+    form(class="form")
+        .form-top
+            h2.section-title Добавляем товары на любые сайты:
+            button(class="btn-close-modal" data-modal-close)
+        input(type="hidden" name="form_title" value="добавление товаров")
+        .form-item
+            label.checkbox-row
+                input(type="checkbox" name="filter1").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text вручную от 250 рублей за товар
+            label.checkbox-row
+                input(type="checkbox" name="filter2").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text настраиваем обмен с 1С - от 30 тр
+            label.checkbox-row
+                input(type="checkbox" name="filter3").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text пишем роботов, собирающих товары с сайтов ваших поставщиков от 60тр
+            label.checkbox-row
+                input(type="checkbox" name="filter4").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text пишем код для настройки нестандартных обменов - файл, гугл таблица, письмо поставщика с ценами - от 10 тр.
+        include ../blocks/block-icons.pug
+        p.form-text Выберите какое наполнение вас интересует, заполните поля и отправьте запрос:
+        .form-item
+            .input-row
+                input(class="form-input" type="text" name="site" placeholder="Caйт")
+                input(class="form-input" type="text" name="tel" placeholder="Ваш номер телефона")
+        .form-item
+            button(type="submit" class="btn-order submit-btn") Заказать

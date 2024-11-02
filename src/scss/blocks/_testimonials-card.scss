@@ -1,0 +1,119 @@
+.testimonials-card {
+    width: 814px;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    border-radius: 16px;
+    padding: 22px 21px;
+    background-color: #fff;
+    transition: transform 0.2s;
+
+    @media (max-width: 1023px) {
+        width: 100%;
+    }
+}
+
+.testimonial-slide {
+margin-inline: 12.5px;
+}
+
+.testimonials-card:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+
+    .testimonials-card__btn {
+        font-weight: 600;
+    }
+}
+
+.testimonials-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @media (max-width: 1023px) {
+        align-items: start;
+    }
+
+    @media (max-width: 575px) {
+        margin-bottom: 15px;
+    }
+}
+
+.testimonials-card__user {
+    font-size: 26px;
+    color: #4f4f4f;
+    font-weight: 600;
+
+    @media (max-width: 1023px) {
+        font-size: 20px;
+    }
+}
+
+.testimonials-card__location {
+    font-weight: 400;
+    font-size: 18px;
+    color: #4f4f4f;
+
+    @media (max-width: 1023px) {
+        font-size: 14px;
+    }
+}
+
+.testimonials-card__rate,  .testimonial-block__rate {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    column-gap: 8px;
+
+    @media (max-width: 390px) {
+        gap: 5px;
+    }
+
+    img {
+        @media (max-width: 1023px) {
+            width: 17px;
+            height: 17px;
+        }
+
+        @media (max-width: 390px) {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+
+.testimonials-card__text {
+    margin-bottom: 10px;
+    padding-left: 8px;
+    font-size: 16px;
+    color: #4f4f4f;
+    min-height: 44px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+    overflow: hidden;
+
+    @media (max-width: 1023px) {
+        -webkit-line-clamp: 4;
+        min-height: 90px;
+    }
+
+    @media (max-width: 390px) {
+        // font-size: 15px;
+        // min-height: 85px;
+    }
+}
+
+.testimonials-card__btn {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--accent-color);
+}
+
+.testimonials-card__hide {
+    display: none;
+}

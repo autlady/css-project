@@ -1,0 +1,17 @@
+mixin testimonial(user, location, text, hideText)
+    //testimonial-card
+    div(data-modal-button="modal-testimonial").testimonials-card
+        .testimonials-card-top
+            .testimonials-card__info
+                h4.testimonials-card__user #{user}
+                .testimonials-card__location #{location}
+                if hideText
+                    .testimonials-card__hide #{hideText}
+            .testimonials-card__rate
+                img(src="./img/star.webp" alt="Star")
+                img(src="./img/star.webp" alt="Star")
+                img(src="./img/star.webp" alt="Star")
+                img(src="./img/star.webp" alt="Star")
+                img(src="./img/star.webp" alt="Star")
+        p.testimonials-card__text #{text}
+        a(href="#!").testimonials-card__btn читать весь отзыв

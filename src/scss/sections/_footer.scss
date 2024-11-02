@@ -1,0 +1,147 @@
+.footer {
+   padding-block: 20px;
+   background-color: #fff;
+
+   @media (max-width: 575px) {
+      padding-bottom: 80px;
+   }
+}
+
+.footer-top {
+   padding-bottom: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.footer-top .nav {
+   @media(max-width: 630px) {
+      display: none;
+   }
+}
+
+.footer__title {
+   display: none;
+   font-weight: 600;
+   font-size: 24px;
+   color: var(--accent-color);
+
+   @media(max-width: 630px) {
+      display: block;
+   }
+}
+
+.footer__btn-call {
+   width: 52px;
+   height: 52px;
+   border-radius: 50%;
+
+   animation: pulse 1.5s infinite;
+
+   @media (max-width: 630px) {
+      display: none;
+   }
+}
+
+.footer-content {
+   display: flex;
+   gap: 50px;
+   color: #000;
+   font-size: 16px;
+
+   @media (max-width: 630px) {
+      margin-bottom: 26px;
+   }
+
+   @media (max-width: 575px) {
+      font-size: 13px;
+      gap: 30px;
+   }
+}
+
+.footer__tel {
+   flex-shrink: 0;
+
+}
+
+.nav-list {
+   display: none;
+   margin-bottom: 12px;
+
+   @media (max-width: 630px) {
+      display: block;
+   }
+}
+
+.nav-list-item {
+   border-bottom: 1px solid #e0e0e0;
+   height: 46px;
+   display: flex;
+   align-items: center;
+}
+
+.nav-list-link {
+   cursor: pointer;
+   font-weight: 600;
+   font-size: 14px;
+   color: #4f4f4f;
+}
+
+.footer-content .footer__map {
+   cursor: pointer;
+   width: 50%;
+   aspect-ratio: 171 / 90;
+
+   @media (max-width: 575px) {
+      width: 171px;
+      height: 90px;
+   }
+}
+
+.footer-bottom {
+   display: flex;
+   justify-content: center;
+}
+
+.modal-block.map-block {
+   width: 90%;
+   background-color: #fff;
+   padding: 40px;
+   position: relative;
+
+      @media (max-width: 767px) {
+         width: 100%;
+         height: 100vh;
+         max-height: 100vh;
+      }
+
+   .btn-close-modal {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+   }
+
+   .footer__map {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+
+
+
+      @media (max-width: 767px) {
+         aspect-ratio: unset;
+         height: 100%;
+      }
+   }
+}
+
+.footer-content {
+   .footer__map {
+      cursor: pointer;
+   }
+   .footer__map iframe {
+      pointer-events: none;
+   }
+}
+
+
+

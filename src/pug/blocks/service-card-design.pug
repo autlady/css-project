@@ -1,0 +1,45 @@
+.service-card
+    form(class="form")
+        .form-top
+            h2.section-title Сменим дизайн сайта:
+            button(class="btn-close-modal" data-modal-close)
+        input(type="hidden" name="form_title" value="popup сменим дизайн сайта")
+        .form-item
+            label.checkbox-row
+                input(type="checkbox" name="filter1").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Полная смена дизайна от 30 тр
+            label.checkbox-row
+                input(type="checkbox" name="filter2").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Смена цветовой гаммы от 3 тр
+            label.checkbox-row
+                input(type="checkbox" name="filter3").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Доработка раздела/страницы от 6 тр
+            label.checkbox-row
+                input(type="checkbox" name="filter4").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Кастомизация под фирменный стиль Заказчика (шрифты, цвета, оформление элементов) от 3 тр
+        h3.section-subtitle.section-subtitle-20 Ваш сайт на:
+        .form-item.form-item-cms
+            label.checkbox-row
+                input(type="radio" name="cms").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text WordPress
+            label.checkbox-row
+                input(type="radio" name="cms").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text 1C Битрикс
+            label.checkbox-row
+                input(type="radio" name="cms").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Не знаю
+        include ../blocks/block-icons.pug
+        p.form-text Выберите какое наполнение вас интересует, заполните поля и отправьте запрос:
+        .form-item
+            .input-row
+                input(class="form-input" type="text" name="site" placeholder="Caйт")
+                input(class="form-input" type="text" name="tel" placeholder="Ваш номер телефона")
+        .form-item
+            button(type="submit" class="btn-order submit-btn") Заказать

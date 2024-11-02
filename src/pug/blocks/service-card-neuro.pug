@@ -1,0 +1,27 @@
+.service-card
+    form(class="form")
+            .form-top
+                h2.section-title Вам нужен искусственный интеллект? У нас есть!
+                button(class="btn-close-modal" data-modal-close)
+            input(type="hidden" name="form_title" value="вам нужен искусственный интеллект")
+            .form-item
+                label.checkbox-row
+                    input(type="checkbox" name="filter1").real-checkbox-modal
+                    span.custom-checkbox-modal
+                    span.checkbox-modal-text Генерация уникального описания товаров/услуг по их характеристикам от 20 тр за сайт
+                label.checkbox-row
+                    input(type="checkbox" name="filter2").real-checkbox-modal
+                    span.custom-checkbox-modal
+                    span.checkbox-modal-text Уникализация статей и текстов от 1 тр
+                label.checkbox-row
+                    input(type="checkbox" name="filter3").real-checkbox-modal
+                    span.custom-checkbox-modal
+                    span.checkbox-modal-text Генерация иных текстовых данных
+            include ../blocks/block-icons.pug
+            p.form-text Выберите какое наполнение вас интересует, заполните поля и отправьте запрос:
+            .form-item
+                .input-row
+                    input(class="form-input" type="text" name="site" placeholder="Caйт")
+                    input(class="form-input" type="text" name="tel" placeholder="Ваш номер телефона")
+            .form-item
+                button(type="submit" class="btn-order submit-btn") Заказать

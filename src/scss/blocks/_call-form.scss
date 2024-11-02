@@ -1,0 +1,190 @@
+.call-form-block,
+.price-form-block  {
+    width: 50%;
+    max-width: 500px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 6px;
+    padding: 38px 24px;
+
+    .form-input {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .btn-order {
+        width: 100%;
+        max-width: unset;
+    }
+
+    @media (max-width: 1023px) {
+        width: 346px;
+    }
+}
+
+.call-form-block .form-top {
+    align-items: first baseline;
+}
+
+.call-form-block {
+    .form-item-mb15 {
+        margin-bottom: 15px;
+    }
+
+    .form-item-mb32 {
+        margin-bottom: 32px;
+    }
+}
+
+.form-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.call-form-block .form-title {
+    max-width: 400px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-color);
+
+    @media (max-width: 1023px) {
+        width: 211px;
+    }
+}
+
+.call-form-subtitle {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4f4f4f;
+}
+
+.call-form-privacy {
+    font-weight: 400;
+    font-size: 8px;
+    text-align: justify;
+    color: #4f4f4f;
+}
+
+.call-form-privacy a {
+    color: #4f4f4f;
+    font-weight: 700;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 43px;
+    border: 1px solid #e7e7e7;
+    border-radius: 9px;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #4f4f4f;
+}
+
+.form-input::placeholder {
+    color: #7C7F8A;
+}
+
+.form-input:focus {
+    border: 1px solid #01203c;
+}
+
+.form-item:first-child {
+    margin-bottom: 20px;
+}
+
+.form-item:nth-child(2) {
+    margin-bottom: 25px;
+}
+
+.form-item:last-child {
+    margin-top: 32px;
+}
+
+.call-form .close-btn {
+    position: absolute;
+    top: 0;
+    right: -52px;
+    z-index: 77;
+
+    @media (max-width: 550px) {
+        top: -40px;
+        right: 20px;
+    }
+}
+
+.close-btn#btn-close-contact .svg-close {
+    width: 32px;
+    height: 32px;
+    color: #fff;
+}
+
+/*========CHECKBOX======*/
+
+.checkbox {
+    display: flex;
+}
+
+.custom-checkbox {
+    flex-shrink: 0;
+    color: #353F4B;
+    font-size: 20px;
+    line-height: 1.43;
+    letter-spacing: -0.2px;
+}
+
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.real-checkbox:focus+.custom-checkbox {
+    background-color: #eee;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #d9d9d9;
+    margin-right: 5px;
+}
+
+.custom-checkbox::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 8px;
+    background-image: url("./../img/icons/check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    margin-top: 1px;
+
+    transition: 0.2s ease-in;
+}
+
+// активация декоративного чекбокса
+.real-checkbox:checked+.custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.real-checkbox:checked+.custom-checkbox {
+    background-color: #e5a152;
+}

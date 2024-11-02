@@ -1,0 +1,31 @@
+.btn-order {
+    display: inline-flex;
+
+    width: 298px;
+    padding: 0 10px;
+    height: 38px;
+
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+
+    background-color: #e5a152;
+
+    border-radius: 100px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 38px;
+    white-space: nowrap;
+
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #ebb87f;
+    }
+
+    &:focus {
+        background-color: #ebb87f;
+    }
+}

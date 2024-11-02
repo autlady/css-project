@@ -1,0 +1,38 @@
+header.header
+   .container
+      .header-content
+         .header__logo
+            .logo
+               a(href="index.html").logo-img
+                  img(src="./img/logo-img.webp", alt="logo")
+            .header__title
+               h1.headline Центр Сопровождения Сайтов
+         nav.nav
+            ul.nav-menu
+               li
+                  a(href="index.html").nav-menu-link.active
+                     svg.svg-home
+                        use(href="./img/spriteSvg.svg#svg-home")
+                     span Главная
+               li
+                  a(href="#services").nav-menu-link
+                     svg.svg-service
+                        use(href="./img/spriteSvg.svg#svg-service")
+                     span Услуги
+               li
+                  a(href="#cases").nav-menu-link
+                     svg.svg-case
+                        use(href="./img/spriteSvg.svg#svg-case")
+                     span Кейсы
+               li
+                  a(href="#testimonials").nav-menu-link
+                     svg.svg-user
+                        use(href="./img/spriteSvg.svg#svg-user")
+                     span Отзывы
+         .header__info
+            p.contact-phone +7-924-746-0444
+            button(class="btn-call" type="button" data-modal-button="modal-call") Заказать звонок
+//modal
+div(class="fade-block hidden" data-modal="modal-call" id="modal-call")
+   .modal-window
+      include ../blocks/call-form.pug

@@ -1,0 +1,31 @@
+@import "./base/_var";
+@import "./base/_base";
+@import "./base/_icons";
+
+//blocks
+
+@import "./blocks/btn-call";
+@import "./blocks/call-form";
+@import "./blocks/btn-order";
+@import "./blocks/btn-close-modal";
+@import "./blocks/btn-about";
+@import "./blocks/modal-block";
+@import "./blocks/block-icons";
+@import "./blocks/case-card";
+@import "./blocks/checkbox-modal";
+@import "./blocks/radio-modal";
+@import "./blocks/testimonials-card";
+@import "./blocks/slider";
+
+//sections
+
+ @import "./sections/header";
+ @import "./sections/promo";
+ @import "./sections/about";
+ @import "./sections/services";
+ @import "./sections/testimonials";
+ @import "./sections/cases";
+ @import "./sections/logos";
+ @import "./sections/faq";
+ @import "./sections/footer";
+

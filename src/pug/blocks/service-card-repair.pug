@@ -1,0 +1,45 @@
+.service-card
+    form(class="form")
+        .form-top
+            h2.section-title Что случилось с вашим сайтом?
+            button(class="btn-close-modal" data-modal-close)
+        input(type="hidden" name="form_title" value="что случилось с вашим сайтом")
+        .form-item
+            label.checkbox-row
+                input(type="checkbox" name="filter1").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Пропал со связи ваш программист?
+            label.checkbox-row
+                input(type="checkbox" name="filter2").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Сайт “лег” под атакой вирусов?
+            label.checkbox-row
+                input(type="checkbox" name="filter3").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Ваш сайт заблокировал провайдер?
+            label.checkbox-row
+                input(type="checkbox" name="filter4").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Конфликт авторских прав?
+            label.checkbox-row
+                input(type="checkbox" name="filter5").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Сайт почему-то не открывается/ открывается ошибкой?
+            label.checkbox-row
+                input(type="checkbox" name="filter6").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Утратили все логины и пароли?
+            label.checkbox-row
+                input(type="checkbox" name="filter7").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Вместо моего сайта открывается другой сайт.
+        .form-item.form-item-mt9
+            input(class="form-input input-problem" type="text" name="problem" placeholder="Что-то иное? Укажите")
+        include ../blocks/block-icons.pug
+        p.form-text Выберите какое наполнение вас интересует, заполните поля и отправьте запрос:
+        .form-item
+            .input-row
+                input(class="form-input" type="text" name="site" placeholder="Caйт")
+                input(class="form-input" type="text" name="tel" placeholder="Ваш номер телефона")
+        .form-item
+            button(type="submit" class="btn-order submit-btn") Заказать

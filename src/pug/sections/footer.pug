@@ -1,0 +1,63 @@
+footer.footer
+    .container
+        .footer-top
+            .logo
+                a(href="index.html").logo-img
+                   img(src="./img/logo-img.webp", alt="logo")
+            nav.nav
+                ul.nav-menu
+                    li.nav-menu-item
+                        a(href="index.html").nav-menu-link.active
+                            svg.svg-home
+                                use(href="./img/spriteSvg.svg#svg-home")
+                            span Главная
+                    li
+                        a(href="#services").nav-menu-link
+                            svg.svg-service
+                                use(href="./img/spriteSvg.svg#svg-service")
+                            span Услуги
+                    li
+                        a(href="#cases").nav-menu-link
+                            svg.svg-case
+                                use(href="./img/spriteSvg.svg#svg-case")
+                            span Кейсы
+                    li
+                        a(href="#testimonials").nav-menu-link
+                            svg.svg-user
+                                use(href="./img/spriteSvg.svg#svg-user")
+                            span Отзывы
+            button(class="footer__btn-call" type="button" data-modal-button="modal-call")
+                img(src="./img/phone.webp" alt="btn call")
+            .footer__title Работаем с 2012 года
+        .footer-content
+            .footer-col
+                .footer__address г. Благовещенск, ул. Шимановского, 27 офис 24
+                .footer__tel тел: +7-924-746-0444
+            div(class="footer__map" data-modal-button="modal-map")
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad631064279eacf4bd2bd77875672a0752001bb2ea179a6c5184667b7c175a4c5&amp;source=constructor"></iframe>
+        ul.nav-list
+            li.nav-list-item
+                a(href="index.html").nav-list-link Главная
+            li.nav-list-item
+                a(href="#services").nav-list-link Услуги
+            li.nav-list-item
+                a(href="#cases").nav-list-link Кейсы
+            li.nav-list-item
+                a(href="#testimonials").nav-list-link Отзывы
+        .footer-bottom
+            button(class="btn-call btn-call-footer" type="button" data-modal-button="modal-call")
+                svg.svg-phone
+                    use(href="./img/spriteSvg.svg#svg-phone")
+                span Заказать бесплатный звонок
+//modal map
+div(class="fade-block hidden" data-modal="modal-map" id="modal-map")
+    .modal-window.modal-window--large
+        .modal-block.map-block
+            button(class="btn-close-modal" data-modal-close)
+            .footer__map
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad631064279eacf4bd2bd77875672a0752001bb2ea179a6c5184667b7c175a4c5&amp;source=constructor"></iframe>
+//modal success form
+#success-form.success-form
+    .success-form-content
+        button(class="btn-close-modal" id="btn-success-close")
+        h2.section-subtitle Форма отправлена!

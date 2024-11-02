@@ -1,0 +1,47 @@
+.service-card
+    form(class="form")
+        .form-top
+            h2.section-title Заберем любые товары с любого сайта
+            button(class="btn-close-modal" data-modal-close)
+        input(type="hidden" name="form_title" value="заберем любые товары с любого сайта")
+        .form-item
+            label.checkbox-row
+                input(type="checkbox" name="filter1").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Перенести товары с сайта поставщика сохранив его структуру каталога от 30 тр
+            label.checkbox-row
+                input(type="checkbox" name="filter2").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Перенести товары и распределить по существующей структуре каталогов от 40 тр
+            label.checkbox-row
+                input(type="checkbox" name="filter3").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Забрать товары и их характеристики чтобы работали фильтры от 40 тр
+            label.checkbox-row
+                input(type="checkbox" name="filter4").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Забрать товары с торговыми предложениями от 40 тр
+            label.checkbox-row
+                input(type="checkbox" name="filter5").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Провести перерасчет цен товаров во время парсинга от 1,5 тр
+            label.checkbox-row
+                input(type="checkbox" name="filter6").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Перенести файлы инструкций и иные документы от 5 тр
+            label.checkbox-row
+                input(type="checkbox" name="filter7").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Оптимизировать изображения при переносе для ускорения сайта от 3 тр
+            label.checkbox-row
+                input(type="checkbox" name="filter8").real-checkbox-modal
+                span.custom-checkbox-modal
+                span.checkbox-modal-text Настроить автообновление остатков и цен от 30 тр
+        include ../blocks/block-icons.pug
+        p.form-text Выберите какое наполнение вас интересует, заполните поля и отправьте запрос:
+        .form-item
+            .input-row
+                input(class="form-input" type="text" name="site" placeholder="Caйт")
+                input(class="form-input" type="text" name="tel" placeholder="Ваш номер телефона")
+        .form-item
+            button(type="submit" class="btn-order submit-btn") Заказать

@@ -1,0 +1,42 @@
+.logos {
+    padding-top: 10px;
+    padding-bottom: 70px;
+    background-color: #fff;
+
+    @media (max-width: 575px) {
+        padding-bottom: 0px;
+    }
+
+    .section-title {
+        text-align: center;
+        color: #4f4f4f;
+        width: 100%;
+
+        @media (max-width: 1023px) {
+            text-align: center;
+        }
+    }
+}
+
+.logo-slide.logo-slide-dark {
+    background-color: var(--accent-color);
+}
+
+.logo-slide {
+    height: 120px;
+}
+
+.logo-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slick-initialized .logo-slide.slick-slide {
+    padding-inline: 21px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

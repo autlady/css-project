@@ -1,0 +1,579 @@
+.promo {
+    padding-top: 88px;
+    padding-bottom: 30px;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #e7e7e7;
+
+    @media (max-width: 890px) {
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+}
+
+.promo-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+
+    @media (max-width: 890px) {
+        row-gap: 7px;
+    }
+}
+
+.promo-box {
+    display: flex;
+    column-gap: 20px;
+
+    @media (max-width: 890px) {
+        column-gap: 7px;
+    }
+}
+
+.promo-row {
+    display: flex;
+    flex-grow: 1;
+    column-gap: 20px;
+
+    @media (max-width: 890px) {
+        column-gap: 7px;
+    }
+}
+
+.promo-box2 {
+    display: flex;
+    column-gap: 20px;
+
+    @media (max-width: 890px) {
+        column-gap: 7px;
+    }
+}
+
+.promo-col {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 25px;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 890px) {
+        column-gap: 7px;
+        row-gap: 7px;
+    }
+
+    @media (max-width: 690px) {
+        width: 73%;
+    }
+}
+
+.promo-col2 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    row-gap: 25px;
+
+    @media (max-width: 890px) {
+        row-gap: 7px;
+    }
+
+    @media (max-width: 575px) {
+        overflow: hidden;
+    }
+}
+
+.promo-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.2s;
+
+    @media (max-width: 890px) {
+        border-radius: 6px;
+    }
+
+    .promo-card__img {
+        position: absolute;
+    }
+
+    .subtitle {
+        color: var(--text-color);
+    }
+
+    .btn-more {
+        padding-top: 10px;
+        font-weight: 300;
+        font-size: 18px;
+        color: #4f4f4f;
+
+        @media (max-width: 575px) {
+            padding-top: 5px;
+            font-size: 10px;
+          }
+    }
+}
+
+.promo-card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.promo-card1 {
+    padding-left: 23px;
+    width: 56%;
+    aspect-ratio: 418 / 144;
+    color: #fff;
+    background-image: url("../img/cards/promo-card-bg1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: 767px) {
+        padding-left: 12px;
+    }
+
+    @media (max-width: 575px) {
+        aspect-ratio: unset;
+        width: 48.8%;
+        height: 60px;
+    }
+
+    .promo-card__text {
+        width: 212px;
+        padding-top: 21px;
+
+        @media (max-width: 1023px) {
+            width: 130px;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 5px;
+        }
+
+        @media (max-width: 575px) {
+            width: 95px;
+        }
+    }
+
+    .subtitle {
+        color: #fff;
+    }
+
+    .btn-more {
+        color: #fff;
+    }
+
+    .promo-card__img {
+        top: -120px;
+        right: -100px;
+        width: 300px;
+
+        @media (max-width: 820px) {
+            width: 200px;
+            top: -45px;
+            right: -60px;
+        }
+
+        @media (max-width: 690px) {
+            width: 131px;
+            top: 22px;
+            right: -43px;
+        }
+
+        @media (max-width: 575px) {
+            width: 113px;
+            top: -37px;
+            right: -41px;
+        }
+    }
+}
+
+.promo-card2 {
+    border: 1.60px solid #e7e7e7;
+    aspect-ratio: 302 / 144;
+    height: 144px;
+    padding-left: 23px;
+
+    @media (max-width: 767px) {
+        padding-left: 12px;
+    }
+
+    @media (max-width: 575px) {
+        aspect-ratio: unset;
+        width: 48.4%;
+        height: 60px;
+    }
+
+    .promo-card__text {
+        width: 149px;
+        padding-top: 21px;
+
+        @media (max-width: 1023px) {
+            width: 130px;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 5px;
+        }
+
+        @media (max-width: 575px) {
+            width: 73px;
+        }
+    }
+
+    .promo-card__img {
+        top: -30px;
+        right: -50px;
+        width: 197px;
+
+        @media (max-width: 690px) {
+            top: -29px;
+    right: -78px;
+    width: 197px;
+        }
+
+        @media (max-width: 575px) {
+            width: 71px;
+            top: -12px;
+            right: -15px;
+        }
+    }
+}
+
+.promo-card3 {
+    border: 1.60px solid #e7e7e7;
+    width: 48%;
+    aspect-ratio: 360 / 157;
+
+    @media (max-width: 575px) {
+        height: 60px;
+        aspect-ratio: unset;
+        width: 66.8%;
+    }
+
+    .promo-card__text {
+        padding-top: 26px;
+        padding-left: 23px;
+        width: 280px;
+
+        @media (max-width: 1023px) {
+            width: 170px;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 5px;
+            padding-left: 12px;
+        }
+
+        @media (max-width: 575px) {
+            width: 107px;
+        }
+    }
+
+    .promo-card__img {
+        right: -30px;
+        top: 70px;
+        width: 189px;
+
+        @media (max-width: 767px) {
+            top: 45px;
+            right: -40px;
+        }
+
+        @media (max-width: 690px) {
+            top: 79px;
+        }
+
+        @media (max-width: 575px) {
+        width: 108px;
+        right: -16px;
+        top: 20px;
+        }
+    }
+
+    .promo-card__img img {
+        filter: grayscale(1);
+    }
+}
+
+.promo-card4 {
+    width: 49.3%;
+    aspect-ratio: 367 / 157;
+    background: linear-gradient(307deg, #21cc93 0%, #00bf80 100%);
+
+    @media (max-width: 690px) {
+        aspect-ratio: 367 / 277;
+    }
+
+    @media (max-width: 575px) {
+        aspect-ratio: unset;
+        width: 31.2%;
+        height: 60px;
+    }
+
+    .promo-card__text {
+        padding-top: 26px;
+        padding-left: 23px;
+
+        @media (max-width: 1023px) {
+            width: 160px;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 5px;
+            padding-left: 8px;
+        }
+
+        @media (max-width: 575px) {
+            width: 56px;
+        }
+    }
+
+    .subtitle {
+        color: #fff;
+        @media (max-width: 575px) {
+            word-wrap: break-word;
+        }
+    }
+
+    .promo-card__img {
+        right: -40px;
+        top: 58px;
+        width: 288px;
+
+        @media (max-width: 1023px) {
+            width: 200px;
+        }
+
+        @media (max-width: 820px) {
+            width: 150px;
+        }
+
+        @media (max-width: 767px) {
+            top: 45px;
+            right: -40px;
+        }
+
+        @media (max-width: 690px) {
+            top: 90px;
+        }
+
+        @media (max-width: 575px) {
+            width: 70px;
+            top: 30px;
+            right: -24px;
+        }
+    }
+
+    .btn-more {
+        color: #fff;
+    }
+}
+
+.promo-card5 {
+    flex-shrink: 0;
+    width: 25.68%;
+    aspect-ratio: 264 / 326;
+    background-image: url("../img/cards/promo-card-bg5.svg");
+
+    @media (max-width: 575px) {
+        height: 127px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 490px) {
+        background-image: url("../img/cards/promo-card-bg5-mob.svg");
+    }
+
+
+    .promo-card__text {
+        width: 230px;
+        padding-top: 31px;
+        padding-left: 26px;
+
+        @media (max-width: 1023px) {
+            width: 170px;
+        }
+
+        @media (max-width: 767px) {
+            width: 120px;
+            padding-top: 10px;
+            padding-left: 12px;
+        }
+
+        @media (max-width: 575px) {
+            width: 74px;
+        }
+
+    }
+
+    .subtitle {
+        color: #fff;
+    }
+
+    .btn-more {
+        padding-top: 14px;
+        color: #fff;
+    }
+
+    .promo-card__img {
+        left: -30px;
+        top: 160px;
+        width: 442px;
+    }
+}
+
+.promo-card6 {
+    flex-shrink: 0;
+    border: 1.60px solid #e7e7e7;
+    width: 25.68%;
+    aspect-ratio: 264 / 327;
+
+    @media (max-width: 575px) {
+        height: 127px;
+    }
+
+    .promo-card__text {
+        z-index: 7;
+        padding-top: 46px;
+        padding-left: 23px;
+        position: relative;
+
+        @media (max-width: 767px) {
+            padding-top: 10px;
+            padding-left: 12px;
+        }
+
+        @media (max-width: 575px) {
+            padding-top: 18px;
+            padding-left: 12px;
+        }
+    }
+
+    .promo-card__img {
+        left: -164px;
+        top: 114px;
+        width: 689px;
+
+        @media (max-width: 767px) {
+            width: 492px;
+            left: -125px;
+            top: 100px;
+        }
+
+        @media (max-width: 575px) {
+            width: 180px;
+            left: -29px;
+            top: 68px;
+        }
+    }
+}
+
+.promo-card6::before {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 560px;
+    height: 140px;
+    z-index: 2;
+    background-image: url("../img/ellipse.svg");
+    background-size: contain;
+    background-position: center;
+
+    @media (max-width: 575px) {
+        top: 50px;
+        width: 150px;
+        height: 50px;
+    }
+}
+
+.promo-card7 {
+    border: 1.60px solid #e7e7e7;
+    width: 100%;
+    aspect-ratio: 743 / 154;
+
+
+    @media (max-width: 575px) {
+        height: 60px;
+    }
+
+    .promo-card__text {
+        padding-top: 41px;
+        padding-left: 36px;
+
+        @media (max-width: 767px) {
+            padding-top: 13px;
+            padding-left: 12px;
+        }
+    }
+
+    .promo-card__img {
+        right: -55px;
+        top: -49px;
+        width: 300px;
+
+        @media (max-width: 655px) {
+            width: 220px;
+        }
+
+        @media (max-width: 575px) {
+            width: 120px;
+            right: -21px;
+            top: -19px;
+
+        }
+    }
+
+    .promo-card__img {
+        filter: grayscale(0.8);
+    }
+}
+
+.promo-card8 {
+    width: 100%;
+    aspect-ratio: 743 / 150;
+    background: linear-gradient(307deg, #7a71e6 0%, #645ad4 100%);
+
+    @media (max-width: 575px) {
+        height: 60px;
+    }
+
+    .promo-card__text {
+        padding-top: 38px;
+        padding-left: 36px;
+
+        @media (max-width: 767px) {
+            padding-top: 13px;
+            padding-left: 12px;
+        }
+    }
+
+    .subtitle {
+        color: #fff;
+    }
+
+    .btn-more {
+        padding-top: 14px;
+        color: #fff;
+    }
+
+    .promo-card__img {
+        right: -44px;
+        top: -95px;
+        width: 335px;
+
+        @media (max-width: 820px) {
+            width: 200px;
+            right: -42px;
+            top: -20px;
+        }
+
+        @media (max-width: 575px) {
+            width: 179px;
+            right: -39px;
+            top: -20px;
+        }
+    }
+}

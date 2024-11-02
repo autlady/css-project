@@ -1,0 +1,87 @@
+section.promo
+    .container
+        .promo-wrapper
+            .promo-box
+                .promo-col
+                    .promo-row
+                        div(class="promo-card promo-card1" data-modal-button="modal-add-product")
+                            .promo-card__text
+                                h3.subtitle Добавление товаров
+                                .btn-more Подробнее
+                            .promo-card__img
+                                img(src="./img/cards/bottles2.webp", alt="card-img")
+                        div(class="promo-card promo-card2" data-modal-button="modal-design")
+                            .promo-card__text
+                                h3.subtitle Редизайн сайта
+                                .btn-more Подробнее
+                            .promo-card__img
+                                img(src="./img/cards/phones.webp", alt="card-img")
+                    .promo-row
+                        div(class="promo-card promo-card3" data-modal-button="modal-feedback")
+                            .promo-card__text
+                                h3.subtitle Настройка обратной связи
+                                .btn-more Подробнее
+                            .promo-card__img
+                                img(src="./img/cards/group.webp", alt="card-img")
+                        div(class="promo-card promo-card4" data-modal-button="modal-synchronization")
+                            .promo-card__text
+                                h3.subtitle Синхронизация с 1С
+                                .btn-more Подробнее
+                            .promo-card__img
+                                img(src="./img/cards/card.webp", alt="card-img")
+                div(class="promo-card promo-card5" data-modal-button="modal-online-pay")
+                    .promo-card__text
+                        h3.subtitle Настройка онлайн оплаты
+                        .btn-more Подробнее
+            .promo-box2
+                div(class="promo-card promo-card6" data-modal-button="modal-parsing")
+                    .promo-card__text
+                        h3.subtitle Парсинг товаров
+                        .btn-more Подробнее
+                    .promo-card__img
+                        img(src="./img/cards/laptop.webp", alt="card-img")
+                .promo-col2
+                    div(class="promo-card promo-card7" data-modal-button="modal-neuro")
+                        .promo-card__text
+                            h3.subtitle Интеграция с нейросетями
+                            .btn-more Подробнее
+                        .promo-card__img
+                            img(src="./img/cards/pearl.webp", alt="card-img")
+                    div(class="promo-card promo-card8" data-modal-button="modal-repair")
+                        .promo-card__text
+                            h3.subtitle Восстановление сайта
+                            .btn-more Подробнее
+                        .promo-card__img
+                            img(src="./img/cards/screens.webp", alt="card-img")
+//modal
+div(class="fade-block hidden" data-modal="modal-add-product" id="modal-add-product")
+    .modal-window.modal-window-promo
+       include ../blocks/add-product-form.pug
+//modal
+div(class="fade-block hidden" data-modal="modal-design" id="modal-design")
+    .modal-window.modal-window-promo
+       include ../blocks/design-form.pug
+//modal
+div(class="fade-block hidden" data-modal="modal-feedback" id="modal-feedback")
+    .modal-window.modal-window-promo
+       include ../blocks/feedback-form.pug
+//modal
+div(class="fade-block hidden" data-modal="modal-synchronization" id="modal-synchronization")
+    .modal-window.modal-window-promo
+       include ../blocks/synchronization-form.pug
+//modal
+div(class="fade-block hidden" data-modal="modal-online-pay" id="modal-online-pay")
+    .modal-window.modal-window-promo
+       include ../blocks/online-pay-form.pug
+//modal
+div(class="fade-block hidden" data-modal="modal-parsing" id="modal-parsing")
+    .modal-window.modal-window-promo
+       include ../blocks/parsing-form.pug
+//modal
+div(class="fade-block hidden" data-modal="modal-repair" id="modal-repair")
+    .modal-window.modal-window-promo
+       include ../blocks/repair-form.pug
+//modal
+div(class="fade-block hidden" data-modal="modal-neuro" id="modal-neuro")
+    .modal-window.modal-window-promo
+       include ../blocks/neuro-form.pug

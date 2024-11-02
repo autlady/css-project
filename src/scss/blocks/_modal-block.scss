@@ -1,0 +1,176 @@
+.modal-window-promo {
+    padding: 30px;
+}
+
+.modal-block {
+    background-color: #fff;
+    width: 80%;
+    max-width: 1028px;
+    height: auto;
+    max-height: 90vh;
+    overflow: hidden;
+    overflow-y: auto;
+
+    @media (max-width: 575px) {
+        width: 100%;
+    }
+}
+
+.testimonial-block {
+    padding: 38px 34px;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 6px;
+    padding: 70px 65px;
+
+    @media (max-width: 1023px) {
+        width: 100%;
+        padding: 38px 34px;
+    }
+
+    @media (max-width: 575px) {
+        padding: 26px 20px;
+    }
+}
+
+.modal-block .form-top {
+    margin-bottom: 26px;
+    align-items: center;
+
+    @media (max-width: 860px) {
+        align-items: first baseline;
+        margin-bottom: 16px;
+    }
+}
+
+.form-top .section-title {
+    margin-bottom: 0;
+
+    @media (max-width: 1023px) {
+        font-size: 20px;
+    }
+}
+
+.modal-block .section-subtitle {
+    margin-bottom: 26px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+}
+
+
+.form-item-cms {
+    margin-bottom: 36px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 30px;
+    }
+}
+
+.form-text {
+    margin-bottom: 26px;
+    font-size: 22px;
+    color: #4f4f4f;
+
+    @media (max-width: 1023px) {
+        font-size: 16px;
+    }
+}
+
+.input-row {
+    display: flex;
+    column-gap: 23px;
+
+    @media (max-width: 1023px) {
+        input {
+            max-width: unset;
+        }
+        width: 100%;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+
+
+.service-card .btn-order {
+    width: 100%;
+    height: 65px;
+
+    @media (max-width: 575px) {
+        height: 38px;
+    }
+}
+
+
+.service-card {
+
+    .form-item-mt9 {
+        margin-top: 9px;
+    }
+
+    .section-subtitle-20 {
+        margin-top: 36px;
+
+        @media (max-width: 575px) {
+            margin-top: 30px;
+        }
+    }
+
+    .form-item-mt7 {
+        margin-top: 7px;
+    }
+
+    .form-input {
+        height: 62px;
+
+        @media (max-width: 575px) {
+            height: 43px;
+        }
+    }
+}
+
+.section-title-light {
+    font-weight: 400;
+
+    @media (max-width: 575px) {
+        width: 100%;
+    }
+}
+
+.input-service, .input-problem {
+    width: 100%;
+    max-width: unset;
+}
+
+.price-form-block .form-title {
+    span {
+        font-weight: 600;
+    }
+}
+
+.price-form-block {
+    .form-title {
+        font-size: 18px;
+    }
+
+    .call-form-subtitle {
+        margin-top: 30px;
+    }
+
+    .form-item-mb15 {
+        margin-bottom: 15px;
+    }
+
+    .form-item-mb32 {
+        margin-bottom: 32px;
+    }
+}
+
+.testimonial-block__text {
+    margin-top: 30px;
+}

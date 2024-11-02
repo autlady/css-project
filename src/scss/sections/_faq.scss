@@ -1,0 +1,90 @@
+.faq {
+    padding-top: 60px;
+    padding-bottom: 56px;
+    background-color: #fbfbfb;
+
+    @media (max-width: 767px) {
+        padding-top: 15px;
+        background-color: #fff;
+        border-bottom: 1px solid #e7e7e7;
+        padding-bottom: 30px;
+    }
+
+    .section-title {
+        text-align: center;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .faq-wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .list-header {
+        padding-right: 60px;
+
+        @media (max-width: 575px) {
+            margin-bottom: 8px;
+            height: unset;
+            padding: 14px;
+            padding-right: 50px;
+            font-size: 13px;
+            border: 1px solid #e7e7e7;
+        }
+    }
+
+    .list-header.last {
+        margin-bottom: 0;
+    }
+
+    .list-header.active {
+        @media (max-width: 575px) {
+            margin-bottom: 0;
+            border: none;
+        }
+    }
+
+    .list-header::after {
+        right: 20px;
+        top: 21px;
+        transition: 0.2s ease-in;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        display: block;
+        background-color: var(--accent-color);
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.09937 5.00937C4.97545 5.1349 4.77455 5.1349 4.65063 5.00937L0.842938 1.15223C0.719021 1.0267 0.719021 0.823185 0.842938 0.697659C0.966854 0.572133 1.16776 0.572133 1.29168 0.697659L4.875 4.32752L8.45832 0.697659C8.58224 0.572134 8.78315 0.572134 8.90706 0.697659C9.03098 0.823185 9.03098 1.0267 8.90706 1.15223L5.09937 5.00937Z' fill='%231C1D22' stroke='white' stroke-linecap='round' stroke-linejoin='round' /%3e%3c/svg%3e");
+        background-size: 10px 7px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (max-width: 575px) {
+            top: 11px;
+            right: 12px;
+            background-size: 8px 6px;
+        }
+    }
+
+    .list-header.active::after {
+        background-color: #fff;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.90063 1.19766C5.02455 1.07213 5.22545 1.07213 5.34937 1.19766L9.15706 5.0548C9.28098 5.18033 9.28098 5.38385 9.15706 5.50937C9.03315 5.6349 8.83224 5.6349 8.70832 5.50937L5.125 1.87951L1.54168 5.50937C1.41776 5.6349 1.21685 5.6349 1.09294 5.50937C0.969021 5.38385 0.969021 5.18033 1.09294 5.0548L4.90063 1.19766Z' fill='%231C1D22' stroke='black' stroke-linecap='round' stroke-linejoin='round' /%3e%3c/svg%3e");
+
+        @media (max-width: 575px) {
+            background-size: 8px 6px;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='9' height='9' viewBox='0 0 9 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.90063 4.98154C4.02455 5.10707 4.22545 5.10707 4.34937 4.98154L8.15706 1.1244C8.28098 0.998871 8.28098 0.795353 8.15706 0.669828C8.03315 0.544302 7.83224 0.544302 7.70832 0.669828L4.125 4.29969L0.541678 0.669827C0.417762 0.544302 0.216854 0.544302 0.0929375 0.669827C-0.0309789 0.795353 -0.0309789 0.99887 0.0929375 1.1244L3.90063 4.98154Z' fill='%2300BF80' /%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.78243 4.65937C3.90259 4.54779 4.09741 4.54779 4.21757 4.65937L7.90988 8.08794C8.03004 8.19952 8.03004 8.38042 7.90988 8.492C7.78972 8.60358 7.5949 8.60358 7.47474 8.492L4 5.26546L0.525263 8.492C0.405102 8.60358 0.210282 8.60358 0.0901208 8.492C-0.0300406 8.38042 -0.0300405 8.19952 0.0901208 8.08794L3.78243 4.65937Z' fill='%2300BF80' /%3e%3c/svg%3e");
+        }
+    }
+
+    .list-content {
+        @media (max-width: 575px) {
+            padding: 14px;
+            padding-top: 5px;
+            font-size: 10px;
+            margin-bottom: 8px;
+        }
+    }
+}

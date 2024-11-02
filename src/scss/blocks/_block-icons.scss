@@ -1,0 +1,40 @@
+.block-icons {
+    margin-bottom: 36px;
+    display: flex;
+    column-gap: 50px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+
+    @media (max-width: 1023px) {
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
+}
+
+.section-subtitle-mt36 {
+    margin-top: 36px;
+
+    @media (max-width: 1023px) {
+        margin-top: 30px;
+    }
+}
+
+.block-icons-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: 1023px) {
+        gap: 8px;
+    }
+}
+
+.block-icons-text {
+    font-weight: 600;
+    font-size: 20px;
+    color: #00bf80;
+
+    @media (max-width: 1023px) {
+        font-size: 14px;
+    }
+}
